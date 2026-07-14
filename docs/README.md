@@ -1,10 +1,10 @@
-# infra-observer — Documentation
+# infraHorizon — Documentation
 
 > The long-term vision is an interactive visualization platform that transforms live infrastructure behavior into interactive execution graphs for learning, debugging, and operational understanding.
 
 ---
 
-## What Is infra-observer?
+## What Is infraHorizon?
 
 ```mermaid
 graph TB
