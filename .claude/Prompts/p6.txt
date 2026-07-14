@@ -1,0 +1,113 @@
+The Documentation Architecture Blueprint (DOC-001) is now frozen and approved.
+
+The execution plan has been accepted as an internal working guide.
+
+We are now officially starting Version 0 documentation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Current Assignment
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create the first repository document:
+
+CHAR-001 — Project Charter
+
+However, before writing the document, spend a small amount of effort designing its structure.
+
+This is NOT another planning phase.
+
+It is simply ensuring that the Charter contains exactly the information it should contain and nothing more.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Step 1 — Propose the Charter Structure
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before writing CHAR-001, propose its table of contents.
+
+For each section explain:
+
+• Why it exists.
+• Why it belongs in the Charter instead of another document.
+• What information belongs in the section.
+• What information must NOT be placed there.
+
+The Charter should remain intentionally short.
+
+Target length:
+
+2–4 pages.
+
+If a section would cause the Charter to grow unnecessarily, recommend removing it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mandatory Sections
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+At minimum evaluate these sections:
+
+1. Mission
+2. North Star
+3. Product Philosophy
+4. Core Principles
+5. Project Values
+6. Explicit Non-Goals
+
+You may recommend one or two additional sections only if they provide clear long-term value.
+
+Avoid adding sections simply because they are common in enterprise documentation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Additional Design Questions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Please also answer the following:
+
+1. What tone should the Charter have?
+
+Examples:
+
+• Visionary
+• Technical
+• Product-oriented
+• Formal
+• Lightweight
+
+Recommend one style and explain why.
+
+2. Should the Charter contain diagrams?
+
+If yes, what type?
+
+If not, explain why.
+
+3. Should the Charter reference other documents?
+
+Or should it remain completely standalone?
+
+Explain the trade-offs.
+
+4. Which future documents should reference the Charter?
+
+List them.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Constraints
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Do not write the Charter yet.
+
+Do not generate placeholder text.
+
+Do not write any prose for Mission or Principles.
+
+Only design the structure.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Definition of Success
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The result should be a complete design for CHAR-001.
+
+Once approved, the Charter should be writable in a single pass with minimal revisions.
+
+The Charter should become the project's constitution and remain stable for years.

@@ -1,0 +1,58 @@
+The Documentation Architecture Blueprint is approved.
+
+Excellent work.
+
+Only one small revision is requested before the document is frozen.
+
+──────────────────────────────
+Revision 1
+──────────────────────────────
+
+Extend the standard document header with the following lightweight metadata:
+
+ID
+
+Version
+
+Status
+
+Owner
+
+Approver
+
+Last Updated
+
+This should become the standard header for major project documents.
+
+Do not introduce document changelogs or revision histories.
+
+Git remains the source of history.
+
+──────────────────────────────
+Next Planning Decision
+──────────────────────────────
+
+Before beginning roadmap.md, we want to introduce one foundational document.
+
+Please evaluate whether the project would benefit from a dedicated Vision document (or Project Charter) that becomes the single source of truth for:
+
+• Mission
+• North Star
+• Product Philosophy
+• Core Principles
+• Long-term Vision
+• Explicit Non-Goals
+• Success Metrics
+
+If you believe this document adds value, explain:
+
+1. Why it should exist.
+2. Where it fits in the documentation hierarchy.
+3. Whether it replaces roadmap.md as the first planning document.
+4. Whether roadmap.md should instead derive from Vision.
+
+Do not write the document yet.
+
+Only provide the recommendation and rationale.
+
+After approval, we will decide the first planning document together.

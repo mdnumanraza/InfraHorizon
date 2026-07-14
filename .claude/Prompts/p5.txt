@@ -1,0 +1,162 @@
+The Documentation Architecture Blueprint (DOC-001) is now officially approved and frozen.
+
+From this point onward, treat DOC-001 as the governing standard for all future documentation.
+
+No further modifications should be made unless explicitly requested.
+
+────────────────────────────────────────
+NEW ASSIGNMENT
+────────────────────────────────────────
+
+Before writing CHAR-001 or any other planning document, I want you to produce a Version 0 Documentation Execution Plan.
+
+This document is NOT part of the repository.
+
+It is a planning artifact for the Product Team to review.
+
+Its purpose is to define how we will execute the documentation work defined by DOC-001.
+
+Think of it as an implementation plan for the documentation itself.
+
+────────────────────────────────────────
+The execution plan should include
+────────────────────────────────────────
+
+1. Recommended document creation order
+
+Starting from CHAR-001.
+
+Explain why each document should come next.
+
+The order should respect dependencies defined in DOC-001.
+
+────────────────────────────────────────
+
+2. Milestones
+
+Group related documents into logical milestones.
+
+For example:
+
+Milestone 1
+Project Vision
+
+Milestone 2
+Product Planning
+
+Milestone 3
+Architecture
+
+Milestone 4
+Engineering Standards
+
+These are examples only.
+
+Propose your own milestone grouping.
+
+────────────────────────────────────────
+
+3. Review Gates
+
+Define where the project should stop for review before continuing.
+
+Not every document requires a separate review.
+
+Recommend logical checkpoints.
+
+Example:
+
+Milestone Complete
+
+↓
+
+Product Review
+
+↓
+
+Approval
+
+↓
+
+Continue
+
+The goal is to reduce unnecessary review overhead while maintaining quality.
+
+────────────────────────────────────────
+
+4. Risks
+
+For each milestone identify:
+
+• Possible risks
+• Common mistakes
+• Scope creep risks
+• How to avoid them
+
+────────────────────────────────────────
+
+5. Estimated Effort
+
+Provide a rough estimate for each document.
+
+Use relative sizing only.
+
+Examples:
+
+Small
+Medium
+Large
+
+Do not estimate hours.
+
+────────────────────────────────────────
+
+6. Dependencies
+
+Show which documents block others.
+
+Use a simple dependency graph or table.
+
+────────────────────────────────────────
+
+7. Acceptance Criteria
+
+Define what "complete" means for each milestone.
+
+Keep acceptance criteria practical and measurable.
+
+────────────────────────────────────────
+
+8. Recommendations
+
+Based on DOC-001, identify any potential issues that could slow Version 0.
+
+Recommend improvements to the execution process only.
+
+Do not change DOC-001.
+
+────────────────────────────────────────
+Constraints
+────────────────────────────────────────
+
+This execution plan is NOT a repository document.
+
+Do NOT generate any planning documents.
+
+Do NOT write CHAR-001.
+
+Do NOT write the PRD.
+
+Do NOT write Requirements.
+
+Do NOT write Architecture.
+
+Remain focused only on planning the execution of Version 0 documentation.
+
+────────────────────────────────────────
+Definition of Success
+────────────────────────────────────────
+
+The execution plan should allow the Product Team to complete Version 0 documentation in a predictable, incremental, review-driven manner without unnecessary planning or rework.
+
+It should become the working plan that Claude follows for the remainder of Version 0 after approval.
