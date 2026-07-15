@@ -1,8 +1,8 @@
 # Project Charter
 
 > **ID:** CHAR-001
-> **Version:** 0.1
-> **Status:** In Review
+> **Version:** 1.0
+> **Status:** Approved
 > **Owner:** Project Owner
 > **Approver:** Project Owner
 > **Last Updated:** 2026-07-14

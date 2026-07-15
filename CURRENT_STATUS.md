@@ -9,9 +9,9 @@
 |-------|-------|
 | **Current Version** | V0 — Foundation |
 | **Current Milestone** | M1 — Project Foundation |
-| **Current Goal** | Write and approve CHAR-001 (Project Charter) and DOC-002 (Roadmap) |
-| **Current Phase** | Write CHAR-001 |
-| **Current Task** | Author Project Charter (`docs/charter.md`) |
-| **Current Branch** | `main` (pre-implementation; all work is documentation) |
+| **Current Goal** | Write and approve CHAR-001 (Charter) and DOC-002 (Roadmap) |
+| **Current Phase** | Review DOC-002 (Roadmap) |
+| **Current Task** | Awaiting review of `docs/roadmap.md` (DOC-002) |
+| **Current Branch** | `main` |
 | **Last Updated** | 2026-07-14 |
-| **Next Planned Task** | Author Roadmap (`docs/roadmap.md`, DOC-002) after Charter is approved |
+| **Next Planned Task** | After M1 approved → begin M2: `product/prd.md` (PRD-001) |

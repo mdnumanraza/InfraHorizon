@@ -64,10 +64,10 @@ This is **not** a Kubernetes dashboard, replacement, or simulator. It is a platf
 | Document | ID | Description |
 |----------|----|-------------|
 | [Documentation Architecture Blueprint](documentation-architecture-blueprint.md) | `DOC-001` | How all documentation is governed — the meta-layer. Start here to understand how this repo is organized. |
+| [Project Charter](charter.md) | `CHAR-001` | Project constitution — mission, principles, values, non-goals. |
+| [Roadmap](roadmap.md) | `DOC-002` | Product evolution across versions — why each version exists and what it creates. |
 | [Decision Log](decision-log.md) | — | Chronological record of all architectural and product decisions. |
 | [Contributor Reference](contributor-reference.md) | — | Current project state, what's done, what's in progress, onboarding path. |
-| `charter.md` *(pending)* | `CHAR-001` | Project constitution — mission, principles, values, non-goals. |
-| `roadmap.md` *(pending)* | `DOC-002` | Version roadmap — where the project is going. |
 | `product/prd.md` *(pending)* | `PRD-001` | Product Requirements Document — what V0 builds and why. |
 | `product/requirements/` *(pending)* | `REQ-F/NF` | Functional and non-functional requirements. |
 | `architecture/overview.md` *(pending)* | `ARCH-001` | High-level system architecture. |
