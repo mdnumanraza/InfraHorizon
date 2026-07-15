@@ -10,8 +10,8 @@
 | **Current Version** | V0 — Foundation |
 | **Current Milestone** | M2 — Product Definition |
 | **Current Goal** | Write and approve PRD-001, Functional Requirements, Non-Functional Requirements |
-| **Current Phase** | Awaiting Product Manager review before starting REQ-F-001 |
-| **Current Task** | PRD-001 approved and frozen — awaiting PM sign-off to begin Functional Requirements |
-| **Current Branch** | `main` |
+| **Current Phase** | Review REQ-F-001 |
+| **Current Task** | Awaiting review of `docs/product/requirements/functional-requirements.md` (REQ-F-001) |
+| **Current Branch** | `numan` |
 | **Last Updated** | 2026-07-14 |
-| **Next Planned Task** | After PM review → write Functional Requirements (`docs/product/requirements/functional-requirements.md`) |
+| **Next Planned Task** | After REQ-F-001 approved → write Non-Functional Requirements (REQ-NF-001) |
