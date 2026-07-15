@@ -8,10 +8,10 @@
 | Field | Value |
 |-------|-------|
 | **Current Version** | V0 — Foundation |
-| **Current Milestone** | M1 — Project Foundation |
-| **Current Goal** | Write and approve CHAR-001 (Charter) and DOC-002 (Roadmap) |
-| **Current Phase** | Review DOC-002 (Roadmap) |
-| **Current Task** | Awaiting review of `docs/roadmap.md` (DOC-002) |
+| **Current Milestone** | M2 — Product Definition |
+| **Current Goal** | Write and approve PRD-001, Functional Requirements, Non-Functional Requirements |
+| **Current Phase** | Review PRD-001 |
+| **Current Task** | Awaiting review of `docs/product/prd.md` (PRD-001) |
 | **Current Branch** | `main` |
 | **Last Updated** | 2026-07-14 |
-| **Next Planned Task** | After M1 approved → begin M2: `product/prd.md` (PRD-001) |
+| **Next Planned Task** | After PRD-001 approved → write Functional Requirements (`REQ-F`) |
