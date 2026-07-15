@@ -12,6 +12,9 @@
 
 | Date | ID | Decision | Reason | Status |
 |------|-----|----------|--------|--------|
+| 2026-07-14 | — | Requirements are never renumbered or deleted; marked Superseded / Deprecated / Obsolete instead | Preserves historical traceability across versions; prevents broken cross-references in architecture and test documents | ✅ Active |
+| 2026-07-14 | — | Each requirement carries Type, Satisfied By, and Verified By fields; latter two populated by ARCH-001 and ENG-002 | Enables forward traceability from requirement to implementation and verification without requiring a separate traceability matrix | ✅ Active |
+| 2026-07-14 | — | Review reports recommended for future major specification documents (not implemented in V0) | Captures accepted changes, rejected changes, and design rationale in one place; reduces re-debating | ✅ Active (recommendation) |
 | 2026-07-12 | DOC-001 | Adopt repository-first, Git-based documentation governance | Lean OSS model; avoids external tool dependency; Git is the history | ✅ Active |
 | 2026-07-12 | — | Keep Functional and Non-Functional Requirements as separate documents from the PRD | Requirements evolve per-version; PRD states stable product intent; separation reduces churn | ✅ Active |
 | 2026-07-12 | — | Introduce a five-tier document status lifecycle: Draft → In Review → Approved → Superseded → Archived | Makes document maturity legible without external tooling | ✅ Active |

@@ -4,7 +4,7 @@
 >
 > **Update cadence:** updated after every Goal completion. Not updated after individual tasks or phases.
 >
-> **Last updated:** 2026-07-14 (after: Repository Foundation goal completed)
+> **Last updated:** 2026-07-14 (after: REQ-F-001 approved; M1 complete; M2 in progress)
 
 ---
 
@@ -20,45 +20,34 @@ infraHorizon is in its documentation and architectural foundation phase. **No im
 
 ## What Has Been Completed
 
+### Milestone 1 — Project Foundation ✅
+- ✅ **CHAR-001 — Project Charter** (`docs/charter.md`) — Approved and frozen
+- ✅ **DOC-002 — Roadmap** (`docs/roadmap.md`) — Approved and frozen
+
 ### Documentation Governance
-- ✅ **DOC-001 — Documentation Architecture Blueprint** (`docs/documentation-architecture-blueprint.md`)
-  - Frozen and approved. Defines how all documentation is created, owned, reviewed, and evolved.
-  - Five document categories, document identifier convention, status lifecycle, folder structure, templates, approval hierarchy.
+- ✅ **DOC-001 — Documentation Architecture Blueprint** (`docs/documentation-architecture-blueprint.md`) — Frozen and approved.
+- ✅ V0 Documentation Execution Plan — Internal working guide.
 
 ### Repository Foundation
-- ✅ **`README.md`** — Project overview, vision, architecture, roadmap, and repo layout with Mermaid diagrams.
-- ✅ **`KNOWLEDGE_BASE.md`** — Canonical context for contributors and AI assistants.
-- ✅ **`CONTRIBUTING.md`** — How to contribute: branching, PRs, reviews, methodology, DoR, DoD.
-- ✅ **`CODE_OF_CONDUCT.md`** — Community standards (Contributor Covenant v2.1).
-- ✅ **`SECURITY.md`** — Security policy and vulnerability reporting.
-- ✅ **`docs/decision-log.md`** — Chronological record of architectural and product decisions.
-- ✅ **`docs/README.md`** — Documentation index and map.
-- ✅ **`docs/contributor-reference.md`** — This document.
+- ✅ `README.md`, `KNOWLEDGE_BASE.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`
+- ✅ `docs/README.md`, `docs/decision-log.md`, `docs/contributor-reference.md`
 
-### Working Artifacts (internal, not repository documents)
-- ✅ `.claude/v0-documentation-execution-plan.md` — Internal guide defining milestones, gates, risks, and effort estimates for V0 documentation.
+### Milestone 2 — Product Definition (In Progress)
+- ✅ **PRD-001** (`docs/product/prd.md`) — Approved and frozen
+- ✅ **REQ-F-001** (`docs/product/requirements/functional-requirements.md`) — Approved and frozen; 38 requirements across 5 capability groups
+- 🔄 **REQ-NF-001** (`docs/product/requirements/non-functional-requirements.md`) — Next
 
 ---
 
 ## What Is Currently In Progress
 
-### Milestone 1 — Project Foundation
-
-**Goal:** Write and approve CHAR-001 (Project Charter) and DOC-002 (Roadmap).
+### Milestone 2 — Product Definition (2 of 3 complete)
 
 | Document | ID | Status | Notes |
 |----------|----|--------|-------|
-| Project Charter | `CHAR-001` | 🔄 Ready to write | Structure approved; awaiting authoring |
-| Roadmap | `DOC-002` | 🔲 Blocked by CHAR-001 | Can start after Charter is approved |
-
-**Charter structure (approved):**
-1. Mission
-2. North Star
-3. Product Philosophy
-4. Core Principles
-5. Project Values
-6. The Charter Rule
-7. Explicit Non-Goals
+| Product Requirements Document | `PRD-001` | ✅ Approved | Frozen |
+| Functional Requirements | `REQ-F-001` | ✅ Approved | Frozen; 38 requirements, 5 groups |
+| Non-Functional Requirements | `REQ-NF-001` | 🔄 Next | Not yet started |
 
 ---
 

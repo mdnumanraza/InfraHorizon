@@ -123,8 +123,8 @@ V0 documentation executes across five milestones (see `.claude/v0-documentation-
 
 | Milestone | Documents | Status |
 |-----------|-----------|--------|
-| **M1 — Foundation** | Charter (`CHAR-001`), Roadmap (`DOC-002`) | 🔲 Pending |
-| **M2 — Product** | PRD (`PRD-001`), Functional Reqs, Non-Functional Reqs | 🔲 Pending |
+| **M1 — Foundation** | Charter (`CHAR-001`), Roadmap (`DOC-002`) | ✅ Complete |
+| **M2 — Product** | PRD (`PRD-001`), Functional Reqs, Non-Functional Reqs | 🔄 In Progress |
 | **M3 — Architecture** | Overview (`ARCH-001`), Tech Stack (`ARCH-002`), ADRs | 🔲 Pending |
 | **M4 — Engineering** | Coding Standards (`ENG-001`), Testing Strategy (`ENG-002`), Dev Workflow (`ENG-003`) | 🔲 Pending |
 | **M5 — Planning** | Goals (`PLAN-001`), Phases (`PLAN-002`), DoD (`PLAN-003`), Risk Register (`PLAN-004`) | 🔲 Pending |
@@ -138,17 +138,18 @@ V0 documentation executes across five milestones (see `.claude/v0-documentation-
 
 ## 9. Current Goal
 
-**Goal:** Complete V0 Milestone 1 — Project Foundation
+**Goal:** Complete V0 Milestone 2 — Product Definition
 
 **Documents to produce:**
-1. `docs/charter.md` (CHAR-001) — Project Charter
-2. `docs/roadmap.md` (DOC-002) — Version Roadmap
+1. `docs/product/prd.md` (PRD-001) — ✅ Approved and frozen
+2. `docs/product/requirements/functional-requirements.md` (REQ-F-001) — ✅ Approved and frozen
+3. `docs/product/requirements/non-functional-requirements.md` (REQ-NF-001) — 🔄 Next
 
-**Status:** Charter structure design approved. Ready to write.
+**Status:** Two of three M2 documents complete. Writing REQ-NF-001 next.
 
-**Blocked by:** None.
+**Blocked by:** Nothing.
 
-**Next after this goal:** Milestone 2 — Product Definition (PRD + Requirements).
+**Next after this goal:** Milestone 3 — Architecture (ARCH-001, ARCH-002, ADRs).
 
 ---
 
@@ -159,6 +160,7 @@ V0 documentation executes across five milestones (see `.claude/v0-documentation-
 | Establish documentation governance | DOC-001 (Documentation Architecture Blueprint) approved and frozen | 2026-07-12 |
 | Create V0 execution plan | `.claude/v0-documentation-execution-plan.md` accepted as working guide | 2026-07-12 |
 | Establish repository foundation | README, CONTRIBUTING, KNOWLEDGE_BASE, CODE_OF_CONDUCT, SECURITY, decision log, contributor reference created | 2026-07-14 |
+| Complete M1 — Project Foundation | CHAR-001 (Charter) and DOC-002 (Roadmap) approved and frozen | 2026-07-14 |
 
 ---
 
