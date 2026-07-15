@@ -1,8 +1,8 @@
 # Product Requirements Document — Version 0
 
 > **ID:** PRD-001
-> **Version:** 0.1
-> **Status:** In Review
+> **Version:** 1.0
+> **Status:** Approved
 > **Owner:** Product Manager
 > **Approver:** Project Owner
 > **Last Updated:** 2026-07-14
@@ -81,35 +81,35 @@ People actively learning how distributed systems and Kubernetes work. They have 
 
 ## 4. Representative Users
 
-### 4.1 The Contributor — Priya
+### 4.1 Open Source Contributor (V0 primary audience)
 
-Priya is a software engineer who has discovered infraHorizon and wants to contribute. She has solid programming experience and a working knowledge of Kubernetes but has not worked on this codebase before. She wants to understand the project's architecture, pick up a task, write code that meets the project's standards, and get her contribution reviewed and merged without ambiguity about whether she did it correctly.
+A software engineer who has discovered infraHorizon and wants to contribute. They have solid programming experience and a working knowledge of Kubernetes but have not worked on this codebase before. They want to understand the project's architecture, pick up a task, write code that meets the project's standards, and get their contribution reviewed and merged without ambiguity about what is expected.
 
-**Her V0 goal:** Find a well-specified task, understand the codebase conventions, implement her contribution confidently, and have it accepted.
+**Goal:** Find a well-specified task, understand the codebase conventions, implement a contribution confidently, and have it accepted.
 
-**Her current frustration:** Open-source projects often lack clear onboarding, inconsistent standards, and no indication of whether a contribution is heading in the right direction before it reaches review.
+**Current frustration:** Open-source projects often have unclear onboarding, inconsistent standards, and no signal as to whether a contribution is heading in the right direction before it reaches review.
 
-**What success looks like for her:** She can read the documentation, understand the architecture decisions, pick up an issue, and know exactly what "done" means before she starts.
+**What success looks like:** They can read the documentation, understand the architecture decisions, pick up an issue, and know exactly what "done" means before they start.
 
-### 4.2 The Infrastructure Engineer — Alex
+### 4.2 Platform Engineer / SRE
 
-Alex is a senior platform engineer at a company running a large Kubernetes fleet. When something goes wrong — a deployment rolls back unexpectedly, a service becomes unreachable, a job keeps failing — Alex spends the first hour of every incident reconstructing what happened from logs and events across multiple tools. She understands Kubernetes well but does not have time to build custom tooling to visualize behavior.
+An engineer who operates, builds, or maintains systems running on Kubernetes. When something goes wrong — a deployment rolls back unexpectedly, a service becomes unreachable, a job keeps failing — they spend significant time in every incident reconstructing what happened from logs and events spread across multiple tools. They understand Kubernetes well but do not have time to build custom tooling to visualize behavior.
 
-**Her goal:** Connect infraHorizon to a cluster, observe what happened during a failure window, and arrive at an explanation faster than she can today.
+**Goal:** Connect infraHorizon to a cluster, observe what happened during a failure window, and arrive at an explanation faster than is possible today.
 
-**Her current frustration:** She knows the answer is somewhere in the events and logs; finding it requires too much manual correlation across too many tools.
+**Current frustration:** The answer is somewhere in the events and logs — finding it requires too much manual correlation across too many tools.
 
-**What success looks like for her:** She connects infraHorizon to a cluster and sees a coherent, timeline-based execution graph of what the system did — without needing to configure anything complex.
+**What success looks like:** Connect infraHorizon to a cluster and see a coherent, timeline-based execution graph of what the system did — without needing to configure anything complex.
 
-### 4.3 The Learner — Daniel
+### 4.3 DevOps Learner
 
-Daniel is a junior engineer who has started working with Kubernetes for the first time. He understands the basic concepts but does not have intuition for what the system is doing beneath the surface when he applies changes. He has read the documentation but wants to *see* what happens — not just read about it.
+An engineer who is actively learning how Kubernetes and distributed systems work. They understand the basic concepts but do not yet have intuition for what the system is doing beneath the surface when they apply changes. They have read the documentation but want to *see* what happens — not just read about it.
 
-**His goal:** Apply a Kubernetes manifest and watch the resulting cascade of events visualized in real time so he can build intuition for how the system actually works.
+**Goal:** Apply a Kubernetes manifest and watch the resulting cascade of events visualized in real time, building intuition for how the system actually works.
 
-**His current frustration:** The system is a black box. He runs `kubectl apply` and things happen, but he cannot see them. He learns slowly because the feedback loop is invisible.
+**Current frustration:** The system is a black box. Running `kubectl apply` causes things to happen that are largely invisible. Learning is slower because the feedback loop cannot be observed.
 
-**What success looks like for him:** He takes an action in Kubernetes and immediately sees a visual, explorable record of what the system did in response — making the invisible visible.
+**What success looks like:** Take an action in Kubernetes and immediately see a visual, explorable record of what the system did in response — making the invisible visible.
 
 ---
 
@@ -203,17 +203,15 @@ The platform is designed so that new infrastructure platforms can be added as pl
 
 These journeys describe end-to-end flows from a user's perspective. They are written for the complete product (V1+), not for V0. They exist in this document to validate that the capabilities in §7 form a coherent experience, and to ensure the V0 foundation supports the journeys that follow.
 
-### 8.1 Debugging an Unexpected Rollback (Alex)
+### 8.1 Debugging an Unexpected Rollback (Platform Engineer / SRE)
 
-Alex notices that a Deployment in her production cluster rolled back unexpectedly twenty minutes ago. She opens infraHorizon, selects the cluster, and navigates to the Deployment in question. She sees an execution graph of the rollback event — the sequence of ReplicaSet changes, the Pod failures that triggered the rollback, the health check events that preceded them, and the controller decisions that followed. She identifies the failed container probe as the root cause and closes the incident within minutes, having seen exactly what happened rather than reconstructed it from fragmented logs.
+A platform engineer notices that a Deployment in their production cluster rolled back unexpectedly twenty minutes ago. They open infraHorizon, select the cluster, and navigate to the Deployment in question. They see an execution graph of the rollback event — the sequence of ReplicaSet changes, the Pod failures that triggered the rollback, the health check events that preceded them, and the controller decisions that followed. They identify the failed container probe as the root cause and close the incident within minutes, having seen exactly what happened rather than reconstructed it from fragmented logs.
 
-### 8.2 Understanding a Deployment (Daniel)
+### 8.2 Understanding a Deployment (DevOps Learner)
 
-Daniel applies a new Deployment manifest to his development cluster for the first time. He opens infraHorizon and watches as the execution graph populates in real time — the Deployment controller creating a ReplicaSet, the scheduler assigning Pods to nodes, the kubelet pulling images and starting containers, each step appearing as a new node in the graph. By the time his application is running, he has seen the full sequence of what Kubernetes did, and he understands it in a way that reading the documentation alone never made possible.
+A DevOps learner applies a new Deployment manifest to their development cluster for the first time. They open infraHorizon and watch as the execution graph populates in real time — the Deployment controller creating a ReplicaSet, the scheduler assigning Pods to nodes, the kubelet pulling images and starting containers, each step appearing as a new node in the graph. By the time their application is running, they have seen the full sequence of what Kubernetes did, and they understand it in a way that reading the documentation alone never made possible.
 
-### 8.3 Observing a CI/CD Pipeline (Future — V6+)
-
-A senior engineer at a company using GitHub Actions to deploy to Kubernetes opens infraHorizon and sees a unified execution graph that begins with a GitHub Actions workflow trigger, follows the deployment through Argo CD into the Kubernetes cluster, and shows the resulting workload behavior. She can trace a production anomaly from the deployment event that caused it all the way back to the specific commit that triggered the pipeline. *(This journey requires V6+ plugin capabilities. It is included to validate that V0's architectural decisions support this future use case.)*
+> **Note on future journeys:** User journeys will expand with each version of infraHorizon as new capabilities are introduced. Future journeys — including cross-platform workflows involving CI/CD pipelines, GitOps tooling, and external plugins — will be defined in the PRD for the version that introduces those capabilities. The long-term direction for user journeys is described in ROADMAP-001 (DOC-002).
 
 ---
 
@@ -302,8 +300,8 @@ Any contributor, on any supported development machine, can set up a working deve
 **SC-4: Standards are complete and consistent.**
 The coding standards, testing strategy, and development workflow are complete, consistent with each other, and sufficient to govern contributions without ambiguity on common cases.
 
-**SC-5: The foundation supports V1 without redesign.**
-When V1 begins, the architecture, interfaces, and standards established in V0 do not need to be reworked to accommodate Kubernetes event collection. V0 was designed with V1 in mind even though V1 is not implemented.
+**SC-5: The foundation establishes stable extension points that enable Version 1 capabilities without requiring fundamental architectural changes.**
+The architecture, interfaces, and standards established in V0 are designed with V1 in mind. When V1 begins, the platform can accommodate Kubernetes event collection by implementing against defined extension points — not by reworking foundational decisions.
 
 **SC-6: The Definition of Done is operational.**
 Every contribution to V0 passes the Definition of Done before merge. The DoD is applied consistently and is not a formality.
@@ -343,3 +341,15 @@ Documentation-first, review-heavy development is appropriate for V0 but may slow
 The PRD describes what users need; the architecture describes how it is built. If these are written by different people at different times without alignment, they will eventually conflict — leading to either features that cannot be built as specified or architecture that does not support what was promised.
 
 *Mitigation:* The document dependency chain (DOC-001 §4) requires the PRD and Requirements to be approved before architecture is written. The Technical Lead reviews the PRD before beginning architecture work.
+
+---
+
+## 14. References
+
+The following documents define or directly influence the scope and content of PRD-001. Where this document references product scope, mission, or version boundaries, those documents are the authoritative source.
+
+| Document | ID | Relationship |
+|----------|----|--------------|
+| Project Charter | CHAR-001 | Constitutional root — mission, principles, values, and non-goals that constrain this PRD |
+| Documentation Architecture Blueprint | DOC-001 | Governs how this document is structured, owned, and reviewed |
+| Roadmap | DOC-002 | Defines the version sequence; PRD-001 represents V0 within that sequence |
