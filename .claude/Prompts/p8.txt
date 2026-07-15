@@ -1,0 +1,136 @@
+CHAR-001 has been approved.
+
+Do not make further modifications.
+
+Treat it as frozen unless a fundamental issue is discovered.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Current Assignment
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create ROADMAP-001.
+
+The roadmap should derive directly from CHAR-001.
+
+Its purpose is to describe the evolution of InfraHorizon across versions.
+
+It is a product roadmap, not a project schedule.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Roadmap Principles
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For every version answer:
+
+1. What capability does this version introduce?
+
+2. Why does this version exist?
+
+3. Why must it come before the following version?
+
+4. What foundation does it create?
+
+Avoid dates.
+
+Avoid timelines.
+
+Avoid effort estimates.
+
+Avoid implementation details.
+
+Focus only on product evolution.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Known Long-Term Direction
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The roadmap should remain consistent with the project's vision.
+
+Current high-level direction:
+
+V0
+Foundation
+
+↓
+
+V1
+Kubernetes Workload Visualization
+
+↓
+
+V2
+Networking Visualization
+
+↓
+
+V3
+Storage Visualization
+
+↓
+
+V4
+Security Visualization
+
+↓
+
+V5
+Kubernetes Plugin Extraction
+
+↓
+
+V6+
+External Platform Plugins
+
+Examples include:
+
+- GitHub Actions
+- Argo CD
+- Jenkins
+- Helm
+- Vault
+- Terraform
+- Kubeflow
+
+Future roadmap placeholders:
+
+- Execution Trace Engine
+- RCA Engine
+- Plugin SDK
+
+Do not over-design future versions.
+
+One paragraph per version is sufficient.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Roadmap Quality
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The roadmap should read like a product story.
+
+Each version should naturally lead into the next.
+
+The reader should understand why the project evolves in this order.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Visualizations
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Include:
+
+1. Mermaid version progression
+
+2. Capability dependency diagram
+
+3. Product evolution diagram
+
+Keep the diagrams simple and maintainable.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Definition of Success
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ROADMAP-001 should become the single source of truth for product evolution.
+
+Future PRDs should reference ROADMAP-001 to determine the scope of the version they describe.
+
+After writing ROADMAP-001, stop and wait for review.
